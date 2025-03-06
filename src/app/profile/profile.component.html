@@ -67,9 +67,15 @@
                   <li *ngFor="let highlight of extracurriculars.highlights" class="highlight-item highlight-item-a">
                       <span class="highlight-icon" [innerHTML]="highlight.icon"></span>
                       <span class="highlight-text">{{highlight.text}}</span>
-                      <a *ngIf="highlight.link" class="highlight-item-a" [routerLink]="['/profile/extracurriculars']">
+                      <!-- <a *ngIf="highlight.link" class="highlight-item-a" [routerLink]="['/profile/extracurriculars']">
                         {{ highlight.linkText }}
-                      </a>
+                      </a> -->
+                      <a *ngIf="highlight.link"
+                      [routerLink]="[highlight.link]"
+                      [fragment]="highlight.fragment"
+                      class="highlight-item-a">
+                     {{ highlight.linkText }}
+                   </a>
                   </li>
               </ul>
               <p class="card-subtitle mb-2 text-muted">{{extracurriculars.date}}</p>

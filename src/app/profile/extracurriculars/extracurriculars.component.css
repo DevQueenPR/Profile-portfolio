@@ -20,4 +20,20 @@
 
   }
 
-  
+#honorsCarousel {
+  width: 100%; 
+}
+
+/* Controls the image height */
+.custom-carousel-img {
+  width: 100%; 
+  height: 400px; 
+  object-fit: cover; /* Ensures images fit nicely */
+}
+
+/* Adjust height for smaller screens */
+@media (max-width: 768px) {
+  .custom-carousel-img {
+    height: 250px; /* Smaller height for mobile */
+  }
+}
