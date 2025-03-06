@@ -1,0 +1,85 @@
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+
+
+<div class="profile">
+  <div class="row">
+    <!-- Left card -->
+    <div class="col-lg-6 mb-4">
+      <div class="card">
+        <img [src]="profile.profileImage" alt="{{profile.profileImage}}" class="card-img-top image-resize">
+        <div class="card-body">
+          <h2 class="card-title">{{profile.profile_name}}</h2>
+          <h6 class="card-subtitle mb-2 text-muted">{{profile.title}}</h6>
+          <p class="card-text">{{profile.description}}</p>
+          <section id="skills">
+            <h3 class="skill-title">Tech Skills</h3>
+            <ul class="no-dots skills-container">
+              <li *ngFor="let skill of skills" class="skill-item" [ngStyle]="{'color': skill.color}">
+                <span class="skill-text" [ngStyle]="{'background-color': skill.backgroundColor}" [innerHTML]="sanitizeIcon(skill.icon + ' ' + skill.text)"></span>
+              </li>
+            </ul>               
+            <h3 class="skill-title">Soft Skills</h3>
+            <ul class="no-dots skills-container">
+              <li *ngFor="let softSkill of softSkills" class="skill-item" [ngStyle]="{'color': softSkill.color}">
+                <span class="skill-text" [ngStyle]="{'background-color': softSkill.backgroundColor}" [innerHTML]="sanitizeIcon(softSkill.icon + ' ' + softSkill.text)"></span>
+              </li>
+            </ul>            
+          </section> 
+        </div>
+        <div class="bottom-design"></div>
+      </div>
+    </div>
+    <!-- Right cards -->
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="col-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="title-with-icon">
+                <i [class]="interests.icon"></i>
+                <h5 class="card-title">{{interests.title}}</h5>
+              </div>
+              <p class="card-text">{{interests.content}}</p>
+              <ul class="no-dots skills-container">
+                <li *ngFor="let highlight of interests.highlights" class="skill-item" [ngStyle]="{'color': highlight.color}">
+                    <span class="skill-text" [ngStyle]="{'background-color': highlight.backgroundColor}">
+                        <i [class]="highlight.icon" class="skill-icon"></i>
+                        {{highlight.text}} 
+                    </span>
+                </li>
+            </ul>
+                    
+              <a [href]="interests.link" target="_blank">Learn more</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="title-with-icon">
+                  <i [class]="extracurriculars.icon"></i>
+                  <h5 class="card-title">{{extracurriculars.title}}</h5>
+              </div>
+              <p class="card-text">{{extracurriculars.content}}</p>
+              <ul class="extracurricular-list">
+                  <li *ngFor="let highlight of extracurriculars.highlights" class="highlight-item highlight-item-a">
+                      <span class="highlight-icon" [innerHTML]="highlight.icon"></span>
+                      <span class="highlight-text">{{highlight.text}}</span>
+                      <a *ngIf="highlight.link" class="highlight-item-a" [routerLink]="['/profile/extracurriculars']">
+                        {{ highlight.linkText }}
+                      </a>
+                  </li>
+              </ul>
+              <p class="card-subtitle mb-2 text-muted">{{extracurriculars.date}}</p>
+            </div>          
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="/portfolio2025/src/app/profile/extracurriculars/extracurriculars.component.html#honors-program">hrere</a>

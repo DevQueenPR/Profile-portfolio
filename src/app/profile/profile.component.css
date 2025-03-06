@@ -1,0 +1,160 @@
+.profile {
+    padding: 20px;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card {
+    background-color: #2e1a47;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .card-body {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .card-title {
+    text-align: center;
+    font-size: 25px !important;
+    margin: 0;
+    font-size: 1.25rem;
+    color: #977fd6;
+  }
+  
+  .card-subtitle {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #a384e6 !important;
+  }
+  
+  .card-text {
+    text-align: center;
+    justify-content: start;
+    margin-top: 10px;
+    color:#977fd6;
+  }
+  
+  .image-resize {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title-with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-with-icon i {
+    margin-right: 8px;
+}
+
+.no-dots {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.extracurricular-list{
+  
+}
+
+.highlight-item {
+  display: flex; /*icon and text in a row*/
+  margin: 8px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #977fd6;
+  color: #977fd6;
+}
+
+.highlight-item a {
+  color: #c1adf3;
+  text-decoration: none;
+  align-self: flex-start; 
+  margin-top: 5px;;
+  margin-left: auto; 
+  margin-right: 10px;
+}
+
+.highlight-item a:hover {
+  color: #9c75e9;
+}
+
+
+.highlight-text {
+  display: block;
+  padding: 4px 0;
+  color: #977fd6;
+}
+
+.highlight-icon {
+  color: #977fd6;
+  margin-bottom: 4px;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
+.title-with-icon{
+  color:#977fd6;
+}
+
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin: 8px;
+}
+
+.skill-title{
+  color:#977fd6;
+}
+
+.skill-text {
+  color:#977fd6 !important;
+  padding: 4px 8px;
+  border-radius: 8px; /* Adjust this for the rounded square effect */
+  border: 1px solid; /* Optional: Add a border for a button-like appearance */
+  display: flex;
+  align-items: center;
+}
+
+.skill-icon {
+    margin-right: 10px !important; /* Adjust this value to control the space between the icon and the text */
+}
+
+/* .see-more-item {
+  display: flex;
+  align-items: start;
+  margin: 8px;
+}
+
+.see-more {
+  cursor: pointer;
+  color:  #977fd6; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+} */
+
+.icon-colored {
+  filter: sepia(0.7) saturate(3) hue-rotate(225deg) brightness(1.2) !important;
+}
+
+svg {
+  filter: sepia(0.7) saturate(3) hue-rotate(225deg) brightness(1.2) !important;
+}

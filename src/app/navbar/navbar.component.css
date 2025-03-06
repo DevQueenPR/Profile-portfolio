@@ -1,0 +1,45 @@
+.navbar {
+  background-color: #2e1a47; 
+  color: #977fd6; 
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar-right .navbar-brand {
+  margin-left: 10px;
+  color: #dbd0f8;
+}
+
+.navbar-brand:hover{
+  color: #9c75e9 !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+  margin: 0 15px;
+  color: #dbd0f8; 
+  transition: color 0.3s ease; 
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+  color: #9c75e9 !important;
+}
+
+/* Tramsform effect */
+
+.navbar-brand i {
+  position: relative;
+  transition: transform 0.5s; 
+}
+
+.navbar-brand:hover i {
+  transform: rotateY(360deg); 
+}

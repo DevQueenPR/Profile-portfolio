@@ -1,0 +1,23 @@
+.video-properties{
+    width: 200px;
+    height: auto;
+}
+.card-properties {
+    /* background-color: #8586e2;  */
+    background-color: #2e1a47;
+    border-radius: 25px;
+    border-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text-color {
+    /* color: #f5f4f8;  */
+    color: #977fd6;
+  }
+
+  .p-properties{
+    text-align: justify;
+
+  }
+
+  
