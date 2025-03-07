@@ -1,3 +1,4 @@
+
 .profile {
     padding: 20px;
   }
@@ -12,6 +13,7 @@
     border: 1px solid #ddd;
     border-radius: 5px;
   }
+
   
   .card-body {
     text-align: center;
@@ -67,10 +69,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.extracurricular-list{
-  
 }
 
 .highlight-item {
@@ -136,20 +134,6 @@
     margin-right: 10px !important; /* Adjust this value to control the space between the icon and the text */
 }
 
-/* .see-more-item {
-  display: flex;
-  align-items: start;
-  margin: 8px;
-}
-
-.see-more {
-  cursor: pointer;
-  color:  #977fd6; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 8px;
-} */
 
 .icon-colored {
   filter: sepia(0.7) saturate(3) hue-rotate(225deg) brightness(1.2) !important;
@@ -233,3 +217,53 @@ svg {
   border: none;
   margin: 20px 0;
 }
+
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+.contact-list li {
+  margin-bottom: 12px;
+  color: #977fd6;
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+.contact-list li:not(:last-child) {
+  border-bottom: 1px solid #ddd; /* Adds line below each item except the last one */
+}
+
+.contact-list li strong {
+  margin-right: 15px; /* Adds space between name and link */
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: #977fd6;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  margin-left: 10px; /* Space between name and link */
+}
+
+.contact-list a:hover {
+  color: rgb(115, 50, 177);
+}
+
+.contact-list i {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.card-body h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #aa77ec; /* Customize the color as needed */
+  margin-bottom: 10px; /* Add some space below the header */
+}
+.rounded-image {
+  border-radius: 10px; /* Adjust the value as needed for more or less rounding */
+}
+

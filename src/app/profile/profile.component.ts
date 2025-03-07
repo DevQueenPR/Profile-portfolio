@@ -55,18 +55,6 @@ export class ProfileComponent {
     { text: '&nbsp;DevOps', icon: '<svg viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" width="20" height="auto" enable-background="new 0 0 24 24"><circle cx="1" cy="16" r="1" fill="#977fd6" class="fill-000000"></circle><circle cx="8" cy="13" r="1" fill="#977fd6" class="fill-000000"></circle><path d="M22 9c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2zm0-3a1.001 1.001 0 0 0 0 2 1.001 1.001 0 0 0 0-2z" fill="#977fd6" class="fill-000000"></path><circle cx="20" cy="15" r="1" fill="#977fd6" class="fill-000000"></circle><circle cx="11" cy="5" r="1" fill="#977fd6" class="fill-000000"></circle><path d="M11.5 20c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.673 1.5-1.5 1.5zm0-2a.5.5 0 1 0 .002 1.002A.5.5 0 0 0 11.5 18zM1.5 16a.5.5 0 0 1-.372-.835l9-10a.5.5 0 1 1 .743.67l-7.578 8.42 17.022-6.72a.497.497 0 0 1 .648.281.498.498 0 0 1-.281.648l-19 7.5A.458.458 0 0 1 1.5 16z" fill="#977fd6" class="fill-000000"></path><path d="m11.874 5.168 8.001 9-.747.665-8.001-9zM21.514 8.379l.97.242-1.498 6-.97-.241zM13 18.5a.5.5 0 0 1-.18-.966l6.5-2.5a.5.5 0 0 1 .359.933l-6.5 2.5A.485.485 0 0 1 13 18.5zM10.5 19a.482.482 0 0 1-.134-.019l-9-2.5a.5.5 0 1 1 .268-.963l9 2.5A.5.5 0 0 1 10.5 19z" fill="#977fd6" class="fill-000000"></path><path d="M20.5 6.5a.525.525 0 0 1-.056-.003l-9-1a.5.5 0 0 1-.442-.553.51.51 0 0 1 .552-.441l9 1a.5.5 0 0 1-.054.997z" fill="#977fd6" class="fill-000000"></path><path d="M11.5 18a.5.5 0 0 1-.499-.479l-.5-12A.5.5 0 0 1 10.979 5c.276.004.509.203.521.479l.5 12a.501.501 0 0 1-.479.521H11.5z" fill="#977fd6" class="fill-000000"></path><path d="M12.5 18a.5.5 0 0 1-.363-.844l8.5-9a.5.5 0 1 1 .727.687l-8.5 9A.497.497 0 0 1 12.5 18zM11 18a.5.5 0 0 1-.417-.223l-3-4.5a.502.502 0 0 1-.052-.453l3-8a.5.5 0 0 1 .936.352l-2.91 7.76 2.858 4.287A.5.5 0 0 1 11 18z" fill="#977fd6" class="fill-000000"></path></svg>', color: mainColor, backgroundColor: secondaryColor },
 ];
 
-// displayedSkills = this.skills.slice(0, 6);
-// hiddenSkills = this.skills.slice(6);
-// showMore = false;
-
-// toggleShowMore() {
-//   this.showMore = !this.showMore;
-//   if (this.showMore) {
-//     this.displayedSkills = this.skills;
-//   } else {
-//     this.displayedSkills = this.skills.slice(0, 6);
-//   }
-// }
 
 softSkills = [
   { text: '&nbsp;Problem solving', icon: '<i class="fa-solid fa-magnifying-glass"></i>', color: mainColor, backgroundColor: secondaryColor },
@@ -81,19 +69,6 @@ softSkills = [
   { text: '&nbsp;Leadership', icon: '<i class="fa-solid fa-chess-king"></i>', color: mainColor, backgroundColor: secondaryColor },
   
 ];
-
-// displayedSoftSkills = this.softSkills.slice(0, 6);
-// hiddenSoftSkills = this.softSkills.slice(6);
-// softShowMore = false;
-
-// toggleSoftShowMore() {
-//   this.softShowMore = !this.softShowMore;
-//   if (this.softShowMore) {
-//     this.displayedSoftSkills = this.softSkills;
-//   } else {
-//     this.displayedSoftSkills = this.softSkills.slice(0, 6);
-//   }
-// }
 
   interests = {
     title: 'Interests',
@@ -151,9 +126,9 @@ softSkills = [
         icon: '<i class="fa-solid fa-folder"></i>', 
         highlight:'UX/UI, Web Developer & DB administrator',
         description: [
-          'Designed and created web pages for the company.',
-          'Developed and programmed an appointment application.',
-          'Automated email integration for the application.'
+          'Designed and created web pages for the project.',
+          'Developed and programmed the Database.',
+          'Helped developing the logic of the application.'
         ],
         link: 'https://github.com/DevQueenPR/project_management' 
       },
@@ -164,3 +139,5 @@ softSkills = [
   
 
 }
+
+
