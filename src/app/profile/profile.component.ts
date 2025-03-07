@@ -97,19 +97,20 @@ softSkills = [
 
   interests = {
     title: 'Interests',
-    content: 'I enjoy art, video games, exploring new technologies and working on personal projects.',
+    content: 'I enjoy a diverse range of activities that keep me inspired and constantly learning. Whether it\'s delving into the creative world of art, immersing myself in the latest video games, exploring cutting-edge technologies, or working on innovative personal projects, I always seek to push the boundaries of my abilities and expand my horizons.',
     icon: 'fa fa-heart', // FontAwesome icon class
     link: 'https://example.com/interests', // Link for more information
     highlights: [
         { text: 'Digital and traditional art', icon: 'fa fa-paint-brush', color: mainColor, backgroundColor: secondaryColor },
         { text: 'Console and PC player', icon: 'fa fa-gamepad', color: mainColor, backgroundColor: secondaryColor },
-        { text: 'Cloud and AI technologies', icon: 'fa fa-cloud', color: mainColor, backgroundColor: secondaryColor },
+        { text: 'Traveling', icon: 'fa fa-plane', color: mainColor, backgroundColor: secondaryColor },
+        { text: 'Volunteering', icon: 'fa fa-hand-holding-heart', color: mainColor, backgroundColor: secondaryColor },
     ]
 };
 
   extracurriculars = {
     title: 'Awards/Extracurriculars',
-    content: 'I have been actively involved in various extracurricular activities, including volunteering at local shelters, participating in hackathons, and winning several coding competitions.',
+    content: "I have been actively involved in various extracurricular activities, including: ",
     icon: 'fa fa-trophy', // FontAwesome icon class
     highlights: [
       { text: 'Elected to represent the CompSci community in a promotional video.', icon: '<i class="fa-solid fa-video"></i>', link: '/profile/extracurriculars', fragment: 'twenty-century-workforce', linkText: 'View' },
@@ -118,9 +119,48 @@ softSkills = [
       { text: 'Passionate innovator in research', icon: '<i class="fa-solid fa-book"></i>', link: '/profile/extracurriculars',  fragment: 'research',  linkText: 'View' },
       { text: 'Lifelong Learning Enthusiast', icon: '<i class="fa-solid fa-computer"></i>', link: '/profile/extracurriculars',  fragment: 'learning',  linkText: 'View'},
     ],
-    date: '2021 - Present' // Relevant date range
+    date: '2021 - Present' 
   };
 
+  projects = {
+    list: [
+      { 
+        name: 'Servicentro Román PR', 
+        icon: '<i class="fa-solid fa-car"></i>', 
+        highlight:'UI/UX, Web, Back-end & DB Developer/Administrator',
+        description: [
+          'Designed and created web pages for the company.',
+          'Developed and programmed an appointment application.',
+          'Automated email integration for the application.'
+        ],
+        link: 'https://www.servicentroromanpr.com/' 
+      },
+      { 
+        name: 'Clubs n Connect', 
+        icon: '<i class="fa-solid fa-hexagon-nodes"></i>', 
+        highlight:'UX/UI, Web & Back-end Developer',
+        description: [
+          'Designed and created web pages for the project.',
+          'Collaborated with the team in the development and programming of the APIs.',
+          'Collaborated with the team to integrate front-end and back-end components.'
+        ],
+        link: 'https://github.com/DevQueenPR/Clubs-n-Connect' 
+      },
+      { 
+        name: 'Project Organizer', 
+        icon: '<i class="fa-solid fa-folder"></i>', 
+        highlight:'UX/UI, Web Developer & DB administrator',
+        description: [
+          'Designed and created web pages for the company.',
+          'Developed and programmed an appointment application.',
+          'Automated email integration for the application.'
+        ],
+        link: 'https://github.com/DevQueenPR/project_management' 
+      },
+    ]
+  };
+  
+  
   
 
 }

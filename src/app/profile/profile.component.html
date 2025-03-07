@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
 
 
-<div class="profile">
+<div class="profile" id="profile">
   <div class="row">
     <!-- Left card -->
     <div class="col-lg-6 mb-4">
@@ -33,7 +33,34 @@
     <!-- Right cards -->
     <div class="col-lg-6">
       <div class="row">
+        <!-- Extracurriculars Section -->
         <div class="col-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="title-with-icon">
+                <i [class]="extracurriculars.icon"></i>
+                <h5 class="card-title">{{extracurriculars.title}}</h5>
+              </div>
+              <p class="card-text">{{extracurriculars.content}}</p>
+              <ul class="extracurricular-list">
+                <li *ngFor="let highlight of extracurriculars.highlights" class="highlight-item highlight-item-a">
+                  <span class="highlight-icon" [innerHTML]="highlight.icon"></span>
+                  <span class="highlight-text">{{highlight.text}}</span>
+                  <a *ngIf="highlight.link"
+                     [routerLink]="[highlight.link]"
+                     [fragment]="highlight.fragment"
+                     class="highlight-item-a">
+                    {{ highlight.linkText }}
+                  </a>
+                </li>
+              </ul>
+              <p class="card-subtitle mb-2 text-muted">{{extracurriculars.date}}</p>
+            </div>          
+          </div>
+        </div>
+    
+        <!-- Interests Section  -->
+        <div class="col-12">
           <div class="card">
             <div class="card-body">
               <div class="title-with-icon">
@@ -43,49 +70,66 @@
               <p class="card-text">{{interests.content}}</p>
               <ul class="no-dots skills-container">
                 <li *ngFor="let highlight of interests.highlights" class="skill-item" [ngStyle]="{'color': highlight.color}">
-                    <span class="skill-text" [ngStyle]="{'background-color': highlight.backgroundColor}">
-                        <i [class]="highlight.icon" class="skill-icon"></i>
-                        {{highlight.text}} 
-                    </span>
+                  <span class="skill-text" [ngStyle]="{'background-color': highlight.backgroundColor}">
+                    <i [class]="highlight.icon" class="skill-icon"></i>
+                    {{highlight.text}} 
+                  </span>
                 </li>
-            </ul>
-                    
-              <a [href]="interests.link" target="_blank">Learn more</a>
+              </ul>
             </div>
-
           </div>
         </div>
-        <div class="col-12">
-          <div class="card">
-            <div class="card-body">
-              <div class="title-with-icon">
-                  <i [class]="extracurriculars.icon"></i>
-                  <h5 class="card-title">{{extracurriculars.title}}</h5>
-              </div>
-              <p class="card-text">{{extracurriculars.content}}</p>
-              <ul class="extracurricular-list">
-                  <li *ngFor="let highlight of extracurriculars.highlights" class="highlight-item highlight-item-a">
-                      <span class="highlight-icon" [innerHTML]="highlight.icon"></span>
-                      <span class="highlight-text">{{highlight.text}}</span>
-                      <!-- <a *ngIf="highlight.link" class="highlight-item-a" [routerLink]="['/profile/extracurriculars']">
-                        {{ highlight.linkText }}
-                      </a> -->
-                      <a *ngIf="highlight.link"
-                      [routerLink]="[highlight.link]"
-                      [fragment]="highlight.fragment"
-                      class="highlight-item-a">
-                     {{ highlight.linkText }}
-                   </a>
-                  </li>
-              </ul>
-              <p class="card-subtitle mb-2 text-muted">{{extracurriculars.date}}</p>
-            </div>          
-          </div>
-          
+      </div>
+    </div>
+
+
+<!-- Projects Section -->
+<div class="col-12">
+  <hr class="section-line">
+  <h5 class="card-title project-properties" id="projects">Projects</h5>
+  <p class="card-text project-properties-subheading">Showcase of my most recent projects:</p>
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let project of projects.list">
+      <div class="card h-100">
+        <div class="card-body">
+          <h6 class="card-title">
+            <span class="project-icon" [innerHTML]="project.icon"></span>
+            {{ project.name }}
+          </h6>
+          <p class="highlight-text">{{ project.highlight }}</p>
+          <ul class="project-list">
+            <li *ngFor="let item of project.description">{{ item }}</li>
+          </ul>
+          <a *ngIf="project.link" 
+          [href]="project.link" 
+          target="_blank" 
+          class="project-link">
+         View
+       </a>       
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<a href="/portfolio2025/src/app/profile/extracurriculars/extracurriculars.component.html#honors-program">hrere</a>
+ <!-- Full-Width Card  -->
+ <div class="col-12 mt-4">
+  <hr class="section-line">
+  <h5 class="card-title project-properties" id="projects">Contact</h5>
+  <p class="card-text project-properties-subheading">text</p>
+  <div class="card full-width-card">
+    <div class="card-body text-center">
+      <p class="card-text"><a href="https://github.com/DevQueenPR">GitHub</a></p>
+      <p class="card-text"><a href="https://sites.google.com/view/eportfolio-genesis-ojeda/home" target="_blank">Google portfolio</a></p>
+      <p class="card-text"><a href="https://www.linkedin.com/in/g%C3%A9nesis-ojeda-451576302/" target="_blank">LinkedIn</a></p>
+      <p class="card-text"><a href="mailto:genesisojeda@ojedatech.com" target="_blank">Email</a></p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+    
