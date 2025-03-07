@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/portfolio2025/src/index.html">
+        <img [src]="DevQueenLogo" alt="DevQueen Logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/portfolio2025/src/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/portfolio2025/src/index.html#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="/portfolio2025/src/index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <a *ngFor="let link of socialLinks" class="navbar-brand" [href]="link.href" [attr.target]="link.target">
+            <i [class]="link.iconClass"></i>
+          </a>
+      </div>
+    </div>
+  </nav>
+  

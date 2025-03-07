@@ -1,0 +1,168 @@
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+
+
+<div class="profile" id="profile">
+  <div class="row">
+    <!-- Left card -->
+    <div class="col-lg-6 mb-4">
+      <div class="card">
+        <img [src]="profile.profileImage" alt="{{profile.profileImage}}" class="card-img-top image-resize">
+        <div class="card-body">
+          <h2 class="card-title">{{profile.profile_name}}</h2>
+          <h6 class="card-subtitle mb-2 text-muted">{{profile.title}}</h6>
+          <p class="card-text">{{profile.description}}</p>
+          <section id="skills">
+            <h3 class="skill-title">Tech Skills</h3>
+            <ul class="no-dots skills-container">
+              <li *ngFor="let skill of skills" class="skill-item" [ngStyle]="{'color': skill.color}">
+                <span class="skill-text" [ngStyle]="{'background-color': skill.backgroundColor}"
+                  [innerHTML]="sanitizeIcon(skill.icon + ' ' + skill.text)"></span>
+              </li>
+            </ul>
+            <h3 class="skill-title">Soft Skills</h3>
+            <ul class="no-dots skills-container">
+              <li *ngFor="let softSkill of softSkills" class="skill-item" [ngStyle]="{'color': softSkill.color}">
+                <span class="skill-text" [ngStyle]="{'background-color': softSkill.backgroundColor}"
+                  [innerHTML]="sanitizeIcon(softSkill.icon + ' ' + softSkill.text)"></span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- Right cards -->
+    <div class="col-lg-6">
+      <div class="row">
+        <!-- Extracurriculars Section -->
+        <div class="col-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="title-with-icon">
+                <i [class]="extracurriculars.icon"></i>
+                <h5 class="card-title">{{extracurriculars.title}}</h5>
+              </div>
+              <p class="card-text">{{extracurriculars.content}}</p>
+              <ul class="extracurricular-list">
+                <li *ngFor="let highlight of extracurriculars.highlights" class="highlight-item highlight-item-a">
+                  <span class="highlight-icon" [innerHTML]="highlight.icon"></span>
+                  <span class="highlight-text">{{highlight.text}}</span>
+                  <a *ngIf="highlight.link" [routerLink]="[highlight.link]" [fragment]="highlight.fragment"
+                    class="highlight-item-a">
+                    {{ highlight.linkText }}
+                  </a>
+                </li>
+              </ul>
+              <p class="card-subtitle mb-2 text-muted">{{extracurriculars.date}}</p>
+              <br>
+            </div>
+          </div>
+        </div>
+        <!-- Interests Section  -->
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="title-with-icon">
+                <i [class]="interests.icon"></i>
+                <h5 class="card-title">{{interests.title}}</h5>
+              </div>
+              <p class="card-text">{{interests.content}}</p>
+              <ul class="no-dots skills-container">
+                <li *ngFor="let highlight of interests.highlights" class="skill-item"
+                  [ngStyle]="{'color': highlight.color}">
+                  <span class="skill-text" [ngStyle]="{'background-color': highlight.backgroundColor}">
+                    <i [class]="highlight.icon" class="skill-icon"></i>
+                    {{highlight.text}}
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Projects Section -->
+    <div class="col-12">
+      <hr class="section-line">
+      <h5 class="card-title project-properties" id="projects">Projects</h5>
+      <p class="card-text project-properties-subheading">Showcase of my most recent projects:</p>
+      <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let project of projects.list">
+          <div class="card h-100">
+            <div class="card-body">
+              <h6 class="card-title">
+                <span class="project-icon" [innerHTML]="project.icon"></span>
+                {{ project.name }}
+              </h6>
+              <p class="highlight-text">{{ project.highlight }}</p>
+              <ul class="project-list">
+                <li *ngFor="let item of project.description">{{ item }}</li>
+              </ul>
+              <a *ngIf="project.link" [href]="project.link" target="_blank" class="project-link">
+                View
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full-Width Card  -->
+    <div class="col-12 mt-4">
+      <hr class="section-line">
+      <h5 class="card-title project-properties text-center" id="contact">
+        Contact Me
+      </h5>
+    
+      <div class="row d-flex align-items-stretch">
+        <!-- Contact Card Column -->
+        <div class="col-md-6">
+          <div class="card contact-card h-100">
+            <div class="card-body text-center">
+              <h2>Contacts</h2> <!-- Header -->
+              <p class="card-text text-left">
+                I'm always open to new opportunities, collaborations, and discussions about technology.
+                Feel free to reach out to me through any of the following platforms.
+              </p>
+    
+              <ul class="contact-list">
+                <li>
+                  <strong><i class="fa-brands fa-github"></i> GitHub:</strong>
+                  <a href="https://github.com/DevQueenPR" target="_blank" class="contact-link">DevQueenPR</a>
+                </li>
+                <li>
+                  <strong><i class="fa-brands fa-linkedin"></i> LinkedIn:</strong>
+                  <a href="https://www.linkedin.com/in/g%C3%A9nesis-ojeda-451576302/" target="_blank"
+                    class="contact-link">Génesis Ojeda</a>
+                </li>
+                <li>
+                  <strong><i class="fa-solid fa-envelope"></i> Email:</strong>
+                  <a href="mailto:genesisojeda@ojedatech.com" class="contact-link">genesisojeda&commat;ojedatech.com</a>
+                </li>
+                <li>
+                  <strong><i class="fa-solid fa-phone"></i> Phone:</strong>
+                  <a href="tel:+1234567890" class="contact-link">+1 (787) 356-0431</a>
+                </li>
+                <li>
+                  <strong><i class="fa-solid fa-map-marker-alt"></i> Address:</strong>
+                  Camuy, Puerto Rico
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Image Card Column -->
+        <div class="col-md-6">
+          <div class="card h-100">
+            <div class="card-body d-flex justify-content-center align-items-center">
+              <img src="/assets/images/DevQueenAltLogo.png" class="rounded-image img-fluid"
+                alt="DevQueen Alt Logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    

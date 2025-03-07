@@ -1,0 +1,55 @@
+/* Establecer un margen superior para que no esté pegado al navbar */
+body {
+    margin-top: 60px; /* Ajusta este valor según la altura de tu navbar */
+    margin-left: 20px; /* Agrega margen izquierdo para evitar que esté pegado al borde */
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Contenedor de la consola */
+  .console-wrapper {
+    display: flex;
+    justify-content: flex-start; /* Alineación a la izquierda */
+    width: 100%; /* La consola ocupa todo el ancho de la página */
+    box-sizing: border-box;
+    padding: 0 20px; /* Espacio a los lados */
+  }
+  
+  /* Estilo de la consola */
+  .console {
+    font-family: 'Courier New', monospace;
+    color: #af46f5;
+    padding: 25px;
+    border-radius: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 20px;
+    font-weight: bold; /* Esto hace que el texto sea en negrita */
+    width: 100%; /* Ancho completo */
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent; /* Elimina el fondo negro */
+    box-shadow: none; /* Elimina el efecto de sombra */
+  }
+  
+  /* Estilo del cursor */
+  .cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.4em;
+    background-color: #3944d8;
+    animation: blink 0.7s step-end infinite;
+    margin-left: 2px; /* Deja un espacio entre el texto y el cursor */
+  }
+  
+  /* Animación del parpadeo del cursor */
+  @keyframes blink {
+    50% {
+      background-color: transparent;
+    }
+  }
+  
