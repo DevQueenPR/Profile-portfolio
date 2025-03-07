@@ -1,32 +1,34 @@
 <div id="twenty-century-workforce">
-<div class="card extracurricularsInformation card-properties text-white my-4 mx-4">
+  <div class="card extracurricularsInformation card-properties text-white my-4 mx-4">
     <div class="card-body">
       <div class="row">
-        <!-- video -->
-        <div class="col-md-3 d-flex justify-content-center">
-          <video class="video-properties" controls>
-            <source src="assets/video/video1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+        <!-- Image  -->
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="/assets/images/twentyonecenturyforce.png" class="img-fluid bordered-img" alt="21st Century Techforce">
         </div>
-        
-        <!-- video -->
-        <div class="col-md-3 d-flex justify-content-center">
-          <video class="video-properties" controls>
-            <source src="assets/video/video2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-  
-        <!-- Text -->
-        <div class="col-md-6 d-flex flex-column justify-content-center text-center">
-          <h5 class="card-title text-color"> Represented the CompSci community in the 21st Century Techforce initiative</h5>
-          <br>
-            <p class="card-text p-properties">21st Century Techforce is an initiative by the Puerto Rico Department of Economic Development and Commerce aimed at boosting the island’s digital talent. Through a stackable credentials model, students can progressively earn certifications in computer science: a certificate in one year, an associate degree in two years, and a bachelor’s degree in four years.</p>
-            <p class="card-text p-properties">
-                I had the opportunity to collaborate with the Interamerican University of Puerto Rico, Arecibo Campus, in presenting the 21st Century Techforce initiative through a promotional video. Learn more about this initiative here:  
-                <a href="https://www.desarrollo.pr.gov/21st-century-workforce/inicio" target="_blank" rel="noopener noreferrer">21st Century Workforce</a>.
-              </p>                     
+
+        <!-- Text  -->
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <h5 class="card-title text-color">
+            Represented the CompSci community in the 21st Century Techforce initiative
+          </h5>
+          <p class="card-text p-properties">
+            21st Century Techforce is an initiative by the Puerto Rico Department of Economic Development and Commerce aimed at boosting the island’s digital talent.
+          </p>
+          <p class="card-text p-properties">
+            I was selected to represent the Computer Science community in the 21st Century Techforce initiative due to my academic achievements and leadership roles throughout my bachelor’s program. My involvement in extracurricular activities, continuous learning and enthusiasm, played a significant role in my selection. This opportunity allowed me to share my experience with fellow students and professionals, highlighting the importance of digital skills and fostering the growth of Puerto Rico's tech talent.
+          </p>          
+          <p class="card-text p-properties">
+            Learn more about this initiative here:  
+            <a href="https://www.desarrollo.pr.gov/21st-century-workforce/inicio" target="_blank" rel="noopener noreferrer">21st Century Workforce</a>.
+          </p>
+          <!-- Video Links -->
+          <p class="card-text p-properties">
+            Watch the videos:
+            <br>
+            <a href="assets/video/video1.mp4" target="_blank">Video 1</a> | 
+            <a href="assets/video/video2.mp4" target="_blank">Video 2</a>
+          </p>
         </div>
       </div>
     </div>
@@ -44,7 +46,7 @@
           <div id="honorsCarousel" class="carousel slide w-100" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div *ngFor="let image of honorsImages; let i = index" class="carousel-item" [class.active]="i === 0">
-                <img [src]="image.src" class="d-block w-100 custom-carousel-img" [alt]="image.alt">
+                <img [src]="image.src" class="d-block w-100 custom-carousel-img bordered-img" [alt]="image.alt">
               </div>
             </div>
             <!-- Carousel Controls -->
@@ -67,7 +69,7 @@
             My experience in the Honors Program at the Inter American University of Puerto Rico has been incredibly enriching. From the rigorous admission process to the academic and professional opportunities it provides, the program has challenged me to grow and excel. It has allowed me to engage in advanced coursework, research, and student development activities that have strengthened my critical thinking and problem-solving skills. Being part of this program has not only expanded my knowledge but also prepared me for future academic and professional challenges in a supportive and inspiring environment.
           </p>
           <p class="card-text p-properties">
-            Learn more about our mission in page 12 of the Kronica's 30th article! <a href="https://www.arecibo.inter.edu/wp-content/uploads/portal/pdf/kronicas30.pdf" alt="Kronicas 30th publication article" target="_blank">Kronica's</a>
+            Learn more about our mission in page 12 of the Kronica's 30th article! <a href="https://www.arecibo.inter.edu/wp-content/uploads/portal/pdf/kronicas30.pdf" alt="Kronicas 30th publication article" target="_blank">Kronica's 30th article</a>
           </p>
         </div>
       </div>
@@ -75,5 +77,162 @@
   </div>
 </div>
 
-  
-  
+<!--Card 3 -->
+
+<div id="rectors-list">
+  <div class="card extracurricularsInformation card-properties text-white my-4 mx-4">
+    <div class="card-body">
+      <div class="row">
+        <!-- Rector's List Carousel -->
+        <div class="col-md-6 d-flex justify-content-center">
+          <div id="rectorsCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div *ngFor="let image of rectorsImages; let i = index" class="carousel-item" [class.active]="i === 0">
+                <img [src]="image.src" class="d-block w-100 bordered-img" [alt]="image.alt" [style.width]="image.width" [style.height]="image.height">
+              </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#rectorsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#rectorsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="col-md-6 d-flex flex-column justify-content-center text-center">
+          <h5 class="card-title text-color"> Rector's List Recognition </h5>
+          <br>
+          <p class="card-text p-properties">
+            Being on the Rector's List is a testament to academic excellence, recognizing students who have demonstrated outstanding dedication and performance in their studies. It is an honor that motivates continuous growth and commitment to learning.
+          </p>
+          <p class="card-text p-properties">
+            I have had the opportunity of being part of the Rector's List with a 4.0 GPA since I started in 2021. It is an honor to be recognized for my academic excellence and dedication. This achievement reflects my commitment to continuous learning and my passion for academic growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--Card 4 -->
+
+<div id="research">
+  <div class="card extracurricularsInformation card-properties text-white my-4 mx-4">
+    <div class="card-body">
+      <div class="row">
+        <!-- Reasearch Carousel -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <div id="researchCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div *ngFor="let image of researchImages; let i = index" class="carousel-item" [class.active]="i === 0">
+                <img [src]="image.src" class="d-block w-100 custom-carousel-img bordered-img" [alt]="image.alt">
+              </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#researchCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#researchCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="col-md-6 d-flex flex-column justify-content-center text-center">
+          <br>
+          <h5 class="card-title text-color"> Innovator in research</h5>
+          <br>
+          <p class="card-text p-properties">
+            I have a strong passion for research and enjoy exploring new topics across different fields. Throughout my academic journey, I have conducted various investigations, including:
+          </p>
+          
+          <div class="research-links">
+            <p class="heading-color"><strong>Related to Computer Science</strong></p>
+            <div class="link-item">
+              <i class="fas fa-laptop-code"></i>
+              <a href="https://github.com/DevQueenPR/Hacking-in-Society" target="_blank">Hacking in Society</a>
+            </div>
+            <div class="link-item">
+              <i class="fas fa-brain"></i>
+              <a href="https://github.com/DevQueenPR/La-influencia-de-la-inteligencia-artificial-en-los-estudiantes-universitarios/tree/main" target="_blank">The influence of AI in university students</a>
+            </div>
+            <div class="link-item">
+              <i class="fas fa-child"></i>
+              <a href="https://github.com/DevQueenPR/Pikto-Talk-Kids" target="_blank">Pickto-Talk-Kids</a>
+            </div>
+            <div class="link-item">
+              <i class="fas fa-code"></i>
+              <a href="https://github.com/DevQueenPR/Codingist" target="_blank">Codingist</a>
+            </div>
+          
+            <p class="heading-color"><strong>Other multidiciplinary areas</strong></p>
+            <div class="link-item">
+              <i class="fas fa-music"></i>
+              <a href="https://github.com/DevQueenPR/Los-vulgarismos-puertorrique-os-en-la-m-sica-popular" target="_blank">Puerto Rican vulgarisms in popular music</a>
+            </div>
+            <div class="link-item">
+              <i class="fas fa-spa"></i>
+              <a href="https://github.com/DevQueenPR/Budismo" target="_blank">Buddhism in Japan</a>
+            </div>
+            <div class="link-item">
+              <i class="fas fa-wine-glass"></i>
+              <a href="https://github.com/DevQueenPR/El-alcoholismo-en-Puerto-Rico" target="_blank">Alcoholism in Puerto Rico</a>
+            </div>
+            <div class="link-item">
+              <i class="fas fa-heart"></i>
+              <a href="https://github.com/DevQueenPR/Diabetes-en-Puerto-Rico" target="_blank">Diabetes in Puerto Rico</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="learning">
+  <div class="card extracurricularsInformation card-properties text-white my-4 mx-4">
+    <div class="card-body">
+      <div class="row">
+        <!-- Carousel -->
+        <div class="col-md-6 d-flex justify-content-center">
+          <div id="learningCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div *ngFor="let image of learningImages; let i = index" class="carousel-item" [class.active]="i === 0">
+                <img [src]="image.src" class="d-block w-100 custom-carousel-img bordered-img" [alt]="image.alt">
+              </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#learningCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#learningCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="col-md-6 d-flex flex-column justify-content-center text-center">
+          <h5 class="card-title text-color">Learning enthusiast</h5>
+          <br>
+          <p class="card-text p-properties">
+            My experience in the Honors Program at the Inter American University of Puerto Rico has been incredibly enriching. From the rigorous admission process to the academic and professional opportunities it provides, the program has challenged me to grow and excel. It has allowed me to engage in advanced coursework, research, and student development activities that have strengthened my critical thinking and problem-solving skills. Being part of this program has not only expanded my knowledge but also prepared me for future academic and professional challenges in a supportive and inspiring environment.
+          </p>
+          <p class="card-text p-properties">
+            Learn more about our mission in page 12 of the Kronica's 30th article! <a href="https://www.arecibo.inter.edu/wp-content/uploads/portal/pdf/kronicas30.pdf" alt="Kronicas 30th publication article" target="_blank">Kronica's 30th article</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

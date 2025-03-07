@@ -112,14 +112,15 @@ softSkills = [
     content: 'I have been actively involved in various extracurricular activities, including volunteering at local shelters, participating in hackathons, and winning several coding competitions.',
     icon: 'fa fa-trophy', // FontAwesome icon class
     highlights: [
-      { text: 'Elected to represent the CompSci community in a promotional video.', icon: '<i class="fa-solid fa-video"></i>', link: '/profile/extracurriculars', fragment: 'twenty-century-workforce', linkText: 'See videos' },
-      { text: 'Active member of the Honor Program', icon: '<i class="fa-solid fa-award"></i>', link: '/profile/extracurriculars',  fragment: 'honors-program', linkText: 'Visit'  },
-      { text: "Recognized on the Rector's List for four consecutive years", icon: '<i class="fa-solid fa-star"></i>'},
-      { text: 'Passionate innovator in research', icon: '<i class="fa-solid fa-book"></i>', link: 'portfolio2025/src/app/profile/video', linkText: 'Visit' },
-      { text: 'Lifelong Learning Enthusiast', icon: '<i class="fa-solid fa-computer"></i>', },
+      { text: 'Elected to represent the CompSci community in a promotional video.', icon: '<i class="fa-solid fa-video"></i>', link: '/profile/extracurriculars', fragment: 'twenty-century-workforce', linkText: 'View' },
+      { text: 'Active member of the Honor Program', icon: '<i class="fa-solid fa-award"></i>', link: '/profile/extracurriculars',  fragment: 'honors-program', linkText: 'View'  },
+      { text: "Recognized on the Rector's List for four consecutive years", icon: '<i class="fa-solid fa-star"></i>', link: '/profile/extracurriculars',  fragment: 'rectors-list', linkText: 'View'},
+      { text: 'Passionate innovator in research', icon: '<i class="fa-solid fa-book"></i>', link: '/profile/extracurriculars',  fragment: 'research',  linkText: 'View' },
+      { text: 'Lifelong Learning Enthusiast', icon: '<i class="fa-solid fa-computer"></i>', link: '/profile/extracurriculars',  fragment: 'learning',  linkText: 'View'},
     ],
     date: '2021 - Present' // Relevant date range
   };
+
   
 
 }
