@@ -9,7 +9,7 @@ import routes from './app.routes';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, ProfileComponent, RouterModule, ExtracurricularsComponent, TypingEffectComponent],
+  imports: [RouterOutlet, NavbarComponent, RouterModule, TypingEffectComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
