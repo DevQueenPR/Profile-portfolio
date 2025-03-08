@@ -66,7 +66,7 @@
         <div class="col-12">
           <div class="card position-relative">
             <div class="upper-right-image-wrapper">
-              <img src="/assets/images/sticker3.png" class="upper-right-image" alt="Decorative Image">
+              <img [src]="profile.profileSticker3" alt="{{profile.profileSticker3}}" class="upper-right-image">
             </div>
             <div class="card-body">
               <div class="title-with-icon">
@@ -129,7 +129,7 @@
           <div class="card contact-card h-100 position-relative">
             <!-- Tilted Image in Corner -->
             <div class="contact-image-wrapper">
-              <img src="/assets/images/sticker2.png" alt="Contact Image" class="contact-image">
+              <img [src]="profile.profileSticker2" alt="{{profile.profileSticker3}}" class="contact-image">
             </div>
             <div class="card-body text-center">
               <h2>Contacts</h2> <!-- Header -->
@@ -170,7 +170,7 @@
         <div class="col-md-6">
           <div class="card h-100">
             <div class="card-body d-flex justify-content-center align-items-center">
-              <img src="/assets/images/DevQueenAltLogo.png" class="rounded-image img-fluid" alt="DevQueen Alt Logo">
+              <img [src]="contact.image" alt="{{contact.image}}" class="rounded-image img-fluid">
             </div>
           </div>
         </div>
