@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TypingEffectComponent implements OnInit {
   phrases: string[] = [
     'Hello, World!',
-    'Welcome to my portfolio!',
+    'Comp Sci rules!',
     'Coding is fun!'
   ];
   phraseIndex = 0;
@@ -33,7 +33,7 @@ export class TypingEffectComponent implements OnInit {
       this.charIndex++;
     }
 
-    consoleElement.innerHTML = `Console.WriteLine("${this.currentText}<span class="cursor">|</span>");`;
+    consoleElement.innerHTML = `Console.Write("${this.currentText}<span class="cursor">|</span>");`;
 
     if (!this.isDeleting && this.charIndex === this.phrases[this.phraseIndex].length) {
       setTimeout(() => {
