@@ -36,13 +36,16 @@ export class ExtracurricularsComponent implements OnInit {
     { src: '/assets/images/honor_program_picture3.png', alt: 'Honors Certificate' },
     { src: '/assets/images/honor_program_picture1.png', alt: 'Honors Investigative Event 1' },
     { src: '/assets/images/honor_program_picture2.png', alt: 'Honors Investigative Event 2' },
+    { src: '/assets/images/honor_program_picture4.png', alt: 'Honors Community Service' },
     { src: '/assets/images/community_service1.png', alt: 'Honors Community Service' },
   ]; 
 
   rectorsImages = [
-    { src: '/assets/images/rectors_awards.png', alt: 'Awards of the Rectors', width: "300px", height: "400px"  },
-    { src: '/assets/images/rectors_certificate1.png', alt: 'Certificate of the Rector 2024', width: "300px", height: "400px"  },
-    { src: '/assets/images/rectors_certificate2.png', alt: 'Certificate of the Rector 2024', width: "300px", height: "400px"  },
+    { src: '/assets/images/rectors_award2.png', alt: 'Certificate and medal of the Rector'},
+    { src: '/assets/images/rectors_award3.png', alt: 'Certificate and medal of the Rector'},
+    { src: '/assets/images/rectors_awards.png', alt: 'Awards of the Rectors'},
+    { src: '/assets/images/rectors_certificate1.png', alt: 'Certificate of the Rector 2024'},
+    { src: '/assets/images/rectors_certificate2.png', alt: 'Certificate of the Rector 2024'},
   ];
 
   researchImages = [

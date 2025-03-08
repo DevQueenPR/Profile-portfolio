@@ -90,7 +90,7 @@
           <div id="rectorsCarousel" class="carousel slide w-100 carousel-container" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div *ngFor="let image of rectorsImages; let i = index" class="carousel-item" [class.active]="i === 0">
-                <img [src]="image.src" class="d-block w-100 bordered-img" [alt]="image.alt" [style.width]="image.width" [style.height]="image.height">
+                <img [src]="image.src" class="d-block w-100 bordered-img" [alt]="image.alt">
               </div>
             </div>
             <!-- Carousel Controls -->

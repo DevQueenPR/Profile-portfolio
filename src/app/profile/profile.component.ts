@@ -23,7 +23,8 @@ export class ProfileComponent {
     profile_name:  'Génesis M. Ojeda Rosa',
     title: 'Software Developer',
     description: 'Hi, I am Génesis Ojeda, a Computer Science student at the Interamerican University of Puerto Rico, Arecibo Campus. I am passionate about both front-end and back-end development. Eager to learn and apply new skills, I strive to create meaningful and efficient solutions.',
-    profileImage:  'assets/images/profile.jpg'
+    profileImage:  'assets/images/profile.png',
+    profileSticker1: 'assets/images/sticker1.png'
   };
 
   sanitizeIcon(icon: string): SafeHtml {

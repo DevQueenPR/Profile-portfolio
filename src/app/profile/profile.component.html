@@ -6,7 +6,11 @@
   <div class="row">
     <!-- Left card -->
     <div class="col-lg-6 mb-4">
-      <div class="card">
+      <div class="card position-relative">
+        <!--  image in corner -->
+        <div class="profile-image-wrapper">
+          <img [src]="profile.profileSticker1" alt="{{profile.profileSticker1}}" class="profile-image">
+        </div>
         <img [src]="profile.profileImage" alt="{{profile.profileImage}}" class="card-img-top image-resize">
         <div class="card-body">
           <h2 class="card-title">{{profile.profile_name}}</h2>
@@ -60,7 +64,10 @@
         </div>
         <!-- Interests Section  -->
         <div class="col-12">
-          <div class="card">
+          <div class="card position-relative">
+            <div class="upper-right-image-wrapper">
+              <img src="/assets/images/sticker3.png" class="upper-right-image" alt="Decorative Image">
+            </div>
             <div class="card-body">
               <div class="title-with-icon">
                 <i [class]="interests.icon"></i>
@@ -115,18 +122,23 @@
       <h5 class="card-title project-properties text-center" id="contact">
         Contact Me
       </h5>
-    
+
       <div class="row d-flex align-items-stretch">
         <!-- Contact Card Column -->
         <div class="col-md-6">
-          <div class="card contact-card h-100">
+          <div class="card contact-card h-100 position-relative">
+            <!-- Tilted Image in Corner -->
+            <div class="contact-image-wrapper">
+              <img src="/assets/images/sticker2.png" alt="Contact Image" class="contact-image">
+            </div>
             <div class="card-body text-center">
               <h2>Contacts</h2> <!-- Header -->
+              <br>
               <p class="card-text text-left">
                 I'm always open to new opportunities, collaborations, and discussions about technology.
                 Feel free to reach out to me through any of the following platforms.
               </p>
-    
+
               <ul class="contact-list">
                 <li>
                   <strong><i class="fa-brands fa-github"></i> GitHub:</strong>
@@ -153,16 +165,14 @@
             </div>
           </div>
         </div>
-    
+
         <!-- Image Card Column -->
         <div class="col-md-6">
           <div class="card h-100">
             <div class="card-body d-flex justify-content-center align-items-center">
-              <img src="/assets/images/DevQueenAltLogo.png" class="rounded-image img-fluid"
-                alt="DevQueen Alt Logo">
+              <img src="/assets/images/DevQueenAltLogo.png" class="rounded-image img-fluid" alt="DevQueen Alt Logo">
             </div>
           </div>
         </div>
       </div>
     </div>
-    
